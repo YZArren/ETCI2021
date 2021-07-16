@@ -1,5 +1,5 @@
 # ETCI2021
-This is the method of the etci2021 champion team
+This is the method of the etci2021 champion team Arren.
 
 # Requirements
 CUDA 11.0
