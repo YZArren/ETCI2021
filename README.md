@@ -29,10 +29,14 @@ The competition involves a supervised learning task—participants will develop 
 ```
 python predict.py -i input_folder -o output_folder
 ```
-
-
-
-
+# ETCI2021 Leaderboard
+|RANK|TEAM|IOU SCORE|
+|------|:------:|:------:|
+|**1**|**Arren(Our)**|**0.7681**|
+|2|Skawakita|0.7671|
+|3|sayak|0.7654|
+|4|shagun1511|0.7506|
+|5|neptuneai|0.7466|
 
 # Acknowledgements
 our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
