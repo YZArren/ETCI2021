@@ -1,8 +1,10 @@
 # ETCI2021
 This is the method of the etci2021 champion team Arren.
+
 # Author's information
 Yong Zheng,Haoran Xu,Yujie Liu,Bingheng Li
-Vips Lab,Xidian University,Xi'An,China
+
+VIPS Lab,Xidian University,Xi'An,China
 # Requirements
 CUDA 11.0
 Python 3.7
