@@ -34,7 +34,7 @@ The overall architecture of the network is shown in the figure on the left and t
 
 Because of the data preprocessing method in nnunet, the original 2D image needs to be converted to nii.gz format. Here we refer to this [case](https://github.com/MIC-DKFZ/nnUNet/blob/master/nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py).
 
-**3. Pre-processing**
+**3. Pre-Processing**
 
 The preprocessing is part of the fully automated segmentation pipeline that our method consists of and, as such, the steps presented below are carried out without any user intervention. Mainly including cropping,resampling, and normalization processing methods. 
 
