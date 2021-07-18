@@ -14,7 +14,7 @@ Torchvision 0.8.2
 medpy 0.4.0
 batchgenrators 0.21
 
-Our program is running on GPUs Titan V100
+Our program is running on GPUs Tesla V100
 # Introduction
 The competition involves a supervised learning task—participants will develop algorithms to identify flood pixels after training their algorithm against a training set of synthetic aperture radar (SAR) images. Because the rivers where the floods are are mostly slender structures, this increases the difficulty of identification. We tried popular algorithms but failed to obtain satisfactory results. 
 
