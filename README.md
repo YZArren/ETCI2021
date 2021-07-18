@@ -5,6 +5,7 @@ This is the method of the etci2021 champion team Arren.
 Yong Zheng,Haoran Xu,Yujie Liu,Bingheng Li
 
 VIPS Lab,Xidian University,Xi'An,China
+
 # Requirements
 CUDA 11.0
 Python 3.7
@@ -17,6 +18,8 @@ batchgenrators 0.21
 The competition involves a supervised learning task—participants will develop algorithms to identify flood pixels after training their algorithm against a training set of synthetic aperture radar (SAR) images. Because the rivers where the floods are are mostly slender structures, this increases the difficulty of identification. We tried popular algorithms but failed to obtain satisfactory results. 
 
 We note that in segmentation, both semantic information and spatial information are the key to the success of the network. U-Net achieves this through a decoder, which receives semantic information from the bottom of the U and recombines it with a high-resolution feature graph obtained directly by the encoder by skipping the connection.Unlike other segmented networks, such as FCN and Deeplab before it, this allows U-Net to fine subdivide the structure very well.Inspired by nnU-Net, we use nnU-Net to implement flood identification experiments.Our approach, both visually and using the intersection over union (IOU) score , achieves excellent performance.
+
+Our program is running GPUs Titan V100 * 4
 
  # The proposed method
  
