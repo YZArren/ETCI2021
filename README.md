@@ -21,7 +21,7 @@ The overall architecture of the network is shown in the figure on the left and t
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/org1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/org2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/org3.png)
 * Ground Truth</p>
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/mask1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/mask2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/mask3.png)
-* Our Methed</p>
+* Our Method</p>
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer3.png)
 
 # Usage
