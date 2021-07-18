@@ -1,6 +1,8 @@
 # ETCI2021
 This is the method of the etci2021 champion team Arren.
-
+# Author's information
+Yong Zheng,Haoran Xu,Yujie Liu,Bingheng Li
+Vips Lab,Xidian University,Xi'An,China
 # Requirements
 CUDA 11.0
 Python 3.7
@@ -34,13 +36,11 @@ python predict.py -i input_folder -o output_folder
 # ETCI2021 Leaderboard
 |RANK|TEAM|IOU SCORE|
 |------|:------:|:------:|
-|**🥇1**|**Arren(Our)**|**0.7681**|
-|🥈2|Skawakita|0.7671|
-|🥉3|sayak|0.7654|
+|**1**|**Arren(Our)**|**0.7681**|
+|2|Skawakita|0.7671|
+|3|sayak|0.7654|
 |4|shagun1511|0.7506|
 |5|neptuneai|0.7466|
-
-
 
 # Acknowledgements
 our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
