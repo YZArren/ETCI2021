@@ -22,9 +22,9 @@ We note that in segmentation, both semantic information and spatial information 
 
 
 
- # The proposed method
+ # The Proposed Method
  
-1. Network architectures.
+1. Network Architectures.
 
 The overall architecture of the network is shown in the figure on the left and the detailed construction of 2D-U-Net on the right.
 
