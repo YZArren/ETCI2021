@@ -14,9 +14,34 @@ medpy 0.4.0
 batchgenrators 0.21
 
 # Introduction
-The competition involves a supervised learning task—participants will develop algorithms to identify flood pixels after training their algorithm against a training set of synthetic aperture radar (SAR) images. Because the rivers where the floods are are mostly slender structures, this increases the difficulty of identification. We tried popular algorithms but failed to obtain satisfactory results. We note that in segmentation, both semantic information and spatial information are the key to the success of the network. U-Net achieves this through a decoder, which receives semantic information from the bottom of the U and recombines it with a high-resolution feature graph obtained directly by the encoder by skipping the connection.Unlike other segmented networks, such as FCN and Deeplab before it, this allows U-Net to fine subdivide the structure very well.Inspired by nnU-Net, we use nnU-Net to implement flood identification experiments.Our approach, both visually and using the intersection over union (IOU) score , achieves excellent performance.
+The competition involves a supervised learning task—participants will develop algorithms to identify flood pixels after training their algorithm against a training set of synthetic aperture radar (SAR) images. Because the rivers where the floods are are mostly slender structures, this increases the difficulty of identification. We tried popular algorithms but failed to obtain satisfactory results. 
+
+We note that in segmentation, both semantic information and spatial information are the key to the success of the network. U-Net achieves this through a decoder, which receives semantic information from the bottom of the U and recombines it with a high-resolution feature graph obtained directly by the encoder by skipping the connection.Unlike other segmented networks, such as FCN and Deeplab before it, this allows U-Net to fine subdivide the structure very well.Inspired by nnU-Net, we use nnU-Net to implement flood identification experiments.Our approach, both visually and using the intersection over union (IOU) score , achieves excellent performance.
+
+ # The proposed method
+1.Network architectures.
 
 The overall architecture of the network is shown in the figure on the left and the detailed construction of 2D-U-Net on the right.
+
+2.Format Converter 1 & Format Converter 2
+
+Because of the data preprocessing method in nnunet, the original 2D image needs to be converted to nii.gz format. Here we refer to this [case](https://github.com/MIC-DKFZ/nnUNet/blob/master/nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py).
+
+3. Pre-processing
+
+The preprocessing is part of the fully automated segmentation pipeline that our method consists of and, as such, the steps presented below are carried out without any user intervention. Mainly including cropping,resampling, and normalization processing methods. 
+
+4.  Training Procedure
+
+All models are trained from scratch and evaluated using five-fold cross-validation on the training set. We train our networks with a combination of dice and crossentropy loss.We use the Adam optimizer with an initial learning rate of 0.0003 for all experiments. We define an epoch as the iteration over 250 training batches.
+
+5.  Inference
+
+Due to the patch-based nature of our training, all inference is done patch-based as well. Since network accuracy decreases towards the border of patches, we weigh voxels close to the center higher than those close to the border, when aggregating predictions across patches. Patches are chosen to overlap by patch size / 2 and we further make use of test time data augmentation by mirroring all patches along all valid axes.
+
+6. Postprocessing
+
+
 
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/net.png)
 
@@ -29,9 +54,7 @@ The overall architecture of the network is shown in the figure on the left and t
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer3.png)
 
 # Usage
-1.Because of the data preprocessing method in nnunet, the original 2D image needs to be converted to nii.gz format.Here we refer to this [case](https://github.com/MIC-DKFZ/nnUNet/blob/master/nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py).
-
-2.After completing data transformation, run the following code for infer.
+After completing data transformation, run the following code for infer.
 ```
 python predict.py -i input_folder -o output_folder
 ```
