@@ -56,11 +56,11 @@ Generate the prediction and submit the binary classification graph of the test d
 
 
 # Results
-* input picture:</p>
+* **Input Picture:**</p>
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/org1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/org2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/org3.png)
-* Ground Truth</p>
+* **Ground Truth**</p>
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/mask1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/mask2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/mask3.png)
-* Our Method</p>
+* **Our Method**</p>
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer1.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer2.png)   ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/infer3.png)
 
 # Usage
