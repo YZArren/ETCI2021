@@ -2,7 +2,7 @@
 This is the method of the etci2021 champion team Arren.
 
 # Author's information
-Yong Zheng,Haoran Xu,Yujie Liu,Bingheng Li
+Yong Zheng, Haoran Xu, Yujie Liu, Bingheng Li
 
 VIPS Lab,Xidian University,Xi'An,China
 
@@ -81,7 +81,7 @@ python predict.py -i input_folder -o output_folder
 <img src=https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png width="311" height="72"/><br/>
 
 # Acknowledgements
-our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
+Our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
 
 
 
