@@ -72,9 +72,10 @@ python predict.py -i input_folder -o output_folder
 |3|sayak|0.7654|
 |4|shagun1511|0.7506|
 |5|neptuneai|0.7466|
-# About
-![image](https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png)
 
 # Acknowledgements
 our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
+
+# About
+![image](https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png, width="98" height="35")
 
