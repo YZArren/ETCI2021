@@ -77,7 +77,7 @@ python predict.py -i input_folder -o output_folder
 |4|shagun1511|0.7506|
 |5|neptuneai|0.7466|
 
-# About
+# About us
 <img src=https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png width="311" height="72"/><br/>
 
 # Acknowledgements
