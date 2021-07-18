@@ -1,4 +1,4 @@
-# ETCI2021
+# 🏆ETCI2021
 This is the method of the etci2021 champion team Arren.
 
 # Author's information
@@ -72,6 +72,9 @@ python predict.py -i input_folder -o output_folder
 |3|sayak|0.7654|
 |4|shagun1511|0.7506|
 |5|neptuneai|0.7466|
+# About
+![image](https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png)
 
 # Acknowledgements
 our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
+
