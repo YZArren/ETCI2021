@@ -24,33 +24,33 @@ We note that in segmentation, both semantic information and spatial information 
 
  # The Proposed Method
  
-1. Network Architectures.
+**1. Network Architectures.**
 
 The overall architecture of the network is shown in the figure on the left and the detailed construction of 2D-U-Net on the right.
 
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/net.png)
 
-2. Format Converter 1 & Format Converter 2
+**2. Format Converter 1 & Format Converter 2**
 
 Because of the data preprocessing method in nnunet, the original 2D image needs to be converted to nii.gz format. Here we refer to this [case](https://github.com/MIC-DKFZ/nnUNet/blob/master/nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py).
 
-3. Pre-processing
+**3. Pre-processing**
 
 The preprocessing is part of the fully automated segmentation pipeline that our method consists of and, as such, the steps presented below are carried out without any user intervention. Mainly including cropping,resampling, and normalization processing methods. 
 
-4. Training Procedure
+**4. Training Procedure**
 
 All models are trained from scratch and evaluated using five-fold cross-validation on the training set. We train our networks with a combination of dice and crossentropy loss.We use the Adam optimizer with an initial learning rate of 0.0003 for all experiments. We define an epoch as the iteration over 250 training batches.
 
-5. Inference
+**5. Inference**
 
 Due to the patch-based nature of our training, all inference is done patch-based as well. Since network accuracy decreases towards the border of patches, we weigh voxels close to the center higher than those close to the border, when aggregating predictions across patches. Patches are chosen to overlap by patch size / 2 and we further make use of test time data augmentation by mirroring all patches along all valid axes.
 
-6. Postprocessing
+**6. Postprocessing**
  
 The pixel threshold is set to 0.5, above which it is assigned to 1, otherwise it is assigned to 0.
 
-7. Submission
+**7. Submission**
 
 Generate the prediction and submit the binary classification graph of the test data in NumPy array format.
 
