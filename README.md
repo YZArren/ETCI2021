@@ -1,5 +1,5 @@
 # 🏆ETCI2021
-This is the method of the etci2021 champion team Arren.
+This is the method of the [ECTI2021](https://nasa-impact.github.io/etci2021/) champion team Arren.
 
 # Author's information
 Yong Zheng, Haoran Xu, Yujie Liu, Bingheng Li
