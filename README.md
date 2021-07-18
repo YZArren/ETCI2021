@@ -19,11 +19,11 @@ The competition involves a supervised learning task—participants will develop 
 We note that in segmentation, both semantic information and spatial information are the key to the success of the network. U-Net achieves this through a decoder, which receives semantic information from the bottom of the U and recombines it with a high-resolution feature graph obtained directly by the encoder by skipping the connection.Unlike other segmented networks, such as FCN and Deeplab before it, this allows U-Net to fine subdivide the structure very well.Inspired by nnU-Net, we use nnU-Net to implement flood identification experiments.Our approach, both visually and using the intersection over union (IOU) score , achieves excellent performance.
 
  # The proposed method
-1.Network architectures.
+1. Network architectures.
 
 The overall architecture of the network is shown in the figure on the left and the detailed construction of 2D-U-Net on the right.
 
-2.Format Converter 1 & Format Converter 2
+2. Format Converter 1 & Format Converter 2
 
 Because of the data preprocessing method in nnunet, the original 2D image needs to be converted to nii.gz format. Here we refer to this [case](https://github.com/MIC-DKFZ/nnUNet/blob/master/nnunet/dataset_conversion/Task120_Massachusetts_RoadSegm.py).
 
