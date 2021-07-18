@@ -77,5 +77,5 @@ python predict.py -i input_folder -o output_folder
 our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
 
 # About
-<img src=https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png width="98" height="35"/><br/>
+<img src=https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png width="197" height="71"/><br/>
 
