@@ -4,8 +4,6 @@ This is the method of the [ETCI2021](https://nasa-impact.github.io/etci2021/) ch
 # Author's information
 Yong Zheng, Haoran Xu, Yujie Liu, Bingheng Li
 
-VIPS Lab, Xidian University, Xi'An, China
-
 # Requirements
 CUDA 11.0
 Python 3.7
@@ -29,6 +27,7 @@ We note that in segmentation, both semantic information and spatial information 
 The overall architecture of the network is shown in the figure on the left and the detailed construction of 2D-U-Net on the right.
 
 ![image](https://github.com/YZArren/ETCI2021/blob/main/pic/net.png)
+![image](https://github.com/YZArren/ETCI2021/blob/main/pic/2.png)
 
 **2. Format Converter 1 & Format Converter 2**
 
@@ -77,8 +76,7 @@ python predict.py -i input_folder -o output_folder
 |4|shagun1511|0.7506|
 |5|neptuneai|0.7466|
 
-# About us
-<img src=https://github.com/YZArren/ETCI2021/blob/main/pic/logo.png width="311" height="72"/><br/>
+
 
 # Acknowledgements
 Our code is based on nnUNet, Thanks to Fabian Isensee for the codes of nnU-Net.
